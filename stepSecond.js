@@ -11,15 +11,23 @@
 // addToZero([1, 2, 3, -2]);
 // // -> True
 function addToZero (arr) {
+    let result = false
+    count = 0
     for(let i = 0; i < arr.length; i++) {
         for(let j = 0; j < arr.length; j++) {
-            if ((arr[i] + arr[j] === 0) && (arr.lngth > 2) && (i !== j)) {
+            if ((arr[i] + arr[j] === 0) && (arr.length > 2) && (i !== j)) {
                 return true
+                count =+ 1
             } else {
                 return false
             }
         }
-    }     
+    }  
+    if (count > 0){ 
+        console.log(true) 
+        return true
+    }  
+
 }
 addToZero([1,2,3,4, -4])
 
