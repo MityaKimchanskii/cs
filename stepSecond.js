@@ -52,10 +52,10 @@ function uniqueChar(word) {
     }
     if (count > 0) {
       return false
-      console.log(false)
+      console.log('false')
     } else {
       return true
-      console.log(true)
+      console.log('true')
     }
 }
 
