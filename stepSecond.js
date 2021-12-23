@@ -38,20 +38,26 @@ addToZero([1,2,3,4, -4])
 // Return False otherwise.
 function uniqueChar(word) {
     var result = false
+    var count = 0
     for(let i = 0; i < word.length; i++) {
         for(let j = 0; j < word.length; j++) {
             if (word[i] === word[j] && i !== j) {
                 result = false
+                count =+ 1
             } else {
                 result = true
+               
             }
         }
     }
-    return result
-    console.log(result)
+    if (count > 0) {
+      return false
+      console.log(false)
+    } else {
+      return true
+      console.log(true)
+    }
 }
-
-
 
 // 3) Pangram Sentence
 // A pangram is a sentence that contains all the letters of the English 
