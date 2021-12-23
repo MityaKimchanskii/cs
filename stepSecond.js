@@ -24,9 +24,12 @@ function addToZero (arr) {
         }
     }  
     if (count > 0){ 
-        console.log(true) 
+        console.log("true") 
         return true
-    }  
+    }  else {
+        console.log("false") 
+        return false
+    }
 
 }
 addToZero([1,2,3,4, -4])
