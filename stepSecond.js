@@ -83,17 +83,17 @@ function uniqueChar(word) {
 // findLongestWord(["hi", "hello"]);
 // // -> 5
 function findLongestWord(arr) {
-    let max = 0
+    let maxLen = 0
+    let arrLength = []
     for (let i = 0; i < arr.length; i++){
       for (let j = 0; j < arr.length; j++) {
          if (arr[i].length < arr[j].length && i !== j) {
-           console.log(arr[i].length, arr[j].length)
-           max = arr[j]
-           console.log(max)
+           maxLen = arr[j].length
+           arrLength.push(maxLen)
          }
       }
     }
-    console.log(max.length)
+    return Math.max.apply(null, arrLength)
  }
  
  findLongestWord(['hi', 'hello']);
